@@ -1,0 +1,416 @@
+[
+  {
+    "id": "root",
+    "title": "产品介绍页",
+    "componentName": "Container",
+    "isContainer": true,
+    "props": {
+      "direction": "col",
+      "gap": "xl",
+      "align": "center",
+      "justify": "start",
+      "className": "min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800"
+    },
+    "style": {
+      "padding": "48px 24px"
+    },
+    "children": [
+      {
+        "id": "hero-section",
+        "title": "Hero Section",
+        "componentName": "Container",
+        "isContainer": true,
+        "props": {
+          "direction": "col",
+          "gap": "lg",
+          "align": "center",
+          "justify": "center",
+          "className": "max-w-4xl w-full"
+        },
+        "style": {
+          "padding": "60px 0"
+        },
+        "children": [
+          {
+            "id": "hero-title",
+            "title": "主标题",
+            "componentName": "Text",
+            "props": {
+              "children": "打造下一代低代码平台",
+              "as": "h1",
+              "size": "4xl",
+              "weight": "extrabold",
+              "align": "center",
+              "color": "default",
+              "className": "bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+            }
+          },
+          {
+            "id": "hero-subtitle",
+            "title": "副标题",
+            "componentName": "Text",
+            "props": {
+              "children": "使用可视化设计器，快速构建美观的应用程序，无需编写代码",
+              "as": "p",
+              "size": "xl",
+              "weight": "normal",
+              "align": "center",
+              "color": "muted",
+              "className": "max-w-2xl"
+            },
+            "style": {
+              "marginTop": "16px"
+            }
+          },
+          {
+            "id": "hero-buttons",
+            "title": "按钮组",
+            "componentName": "Container",
+            "isContainer": true,
+            "props": {
+              "direction": "row",
+              "gap": "md",
+              "align": "center",
+              "justify": "center"
+            },
+            "style": {
+              "marginTop": "32px"
+            },
+            "children": [
+              {
+                "id": "cta-primary",
+                "title": "主按钮",
+                "componentName": "Button",
+                "props": {
+                  "children": "开始使用",
+                  "variant": "default",
+                  "size": "lg"
+                }
+              },
+              {
+                "id": "cta-secondary",
+                "title": "次按钮",
+                "componentName": "Button",
+                "props": {
+                  "children": "查看文档",
+                  "variant": "outline",
+                  "size": "lg"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "features-section",
+        "title": "特性区域",
+        "componentName": "Container",
+        "isContainer": true,
+        "props": {
+          "direction": "col",
+          "gap": "xl",
+          "align": "center",
+          "justify": "start",
+          "className": "max-w-6xl w-full"
+        },
+        "style": {
+          "marginTop": "80px"
+        },
+        "children": [
+          {
+            "id": "features-title",
+            "title": "特性标题",
+            "componentName": "Text",
+            "props": {
+              "children": "核心特性",
+              "as": "h2",
+              "size": "3xl",
+              "weight": "bold",
+              "align": "center",
+              "color": "default"
+            }
+          },
+          {
+            "id": "features-grid",
+            "title": "特性网格",
+            "componentName": "Container",
+            "isContainer": true,
+            "props": {
+              "direction": "row",
+              "gap": "lg",
+              "align": "stretch",
+              "justify": "center",
+              "className": "w-full flex-wrap"
+            },
+            "style": {
+              "marginTop": "48px"
+            },
+            "children": [
+              {
+                "id": "feature-card-1",
+                "title": "特性卡片1",
+                "componentName": "Container",
+                "isContainer": true,
+                "props": {
+                  "direction": "col",
+                  "gap": "md",
+                  "align": "start",
+                  "justify": "start",
+                  "className": "bg-card border border-border rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                },
+                "style": {
+                  "padding": "32px",
+                  "flex": "1 1 300px",
+                  "maxWidth": "350px"
+                },
+                "children": [
+                  {
+                    "id": "feature-1-image",
+                    "title": "特性1图片",
+                    "componentName": "Image",
+                    "props": {
+                      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23e2e8f0'/%3E%3Ctext x='200' y='150' fill='%2364748b' font-family='Arial,sans-serif' font-size='24' text-anchor='middle' dominant-baseline='middle'%3EImage%3C/text%3E%3C/svg%3E",
+                      "alt": "可视化设计",
+                      "width": "80px",
+                      "height": "80px",
+                      "objectFit": "fill",
+                      "rounded": "lg"
+                    }
+                  },
+                  {
+                    "id": "feature-1-title",
+                    "title": "特性1标题",
+                    "componentName": "Text",
+                    "props": {
+                      "children": "可视化设计",
+                      "as": "h3",
+                      "size": "xl",
+                      "weight": "semibold",
+                      "color": "default"
+                    }
+                  },
+                  {
+                    "id": "feature-1-desc",
+                    "title": "特性1描述",
+                    "componentName": "Text",
+                    "props": {
+                      "children": "通过拖拽操作快速构建页面，所见即所得的设计体验让开发变得简单高效",
+                      "as": "p",
+                      "size": "sm",
+                      "weight": "normal",
+                      "color": "muted"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "feature-card-2",
+                "title": "特性卡片2",
+                "componentName": "Container",
+                "isContainer": true,
+                "props": {
+                  "direction": "col",
+                  "gap": "md",
+                  "align": "start",
+                  "justify": "start",
+                  "className": "bg-card border border-border rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                },
+                "style": {
+                  "padding": "32px",
+                  "flex": "1 1 300px",
+                  "maxWidth": "350px"
+                },
+                "children": [
+                  {
+                    "id": "feature-2-image",
+                    "title": "特性2图片",
+                    "componentName": "Image",
+                    "props": {
+                      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23e2e8f0'/%3E%3Ctext x='200' y='150' fill='%2364748b' font-family='Arial,sans-serif' font-size='24' text-anchor='middle' dominant-baseline='middle'%3EImage%3C/text%3E%3C/svg%3E",
+                      "alt": "组件丰富",
+                      "width": "80px",
+                      "height": "80px",
+                      "objectFit": "fill",
+                      "rounded": "lg"
+                    }
+                  },
+                  {
+                    "id": "feature-2-title",
+                    "title": "特性2标题",
+                    "componentName": "Text",
+                    "props": {
+                      "children": "组件丰富",
+                      "as": "h3",
+                      "size": "xl",
+                      "weight": "semibold",
+                      "color": "default"
+                    }
+                  },
+                  {
+                    "id": "feature-2-desc",
+                    "title": "特性2描述",
+                    "componentName": "Text",
+                    "props": {
+                      "children": "内置丰富的组件库，支持自定义扩展，满足各种业务场景需求",
+                      "as": "p",
+                      "size": "sm",
+                      "weight": "normal",
+                      "color": "muted"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "feature-card-3",
+                "title": "特性卡片3",
+                "componentName": "Container",
+                "isContainer": true,
+                "props": {
+                  "direction": "col",
+                  "gap": "md",
+                  "align": "start",
+                  "justify": "start",
+                  "className": "bg-card border border-border rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                },
+                "style": {
+                  "padding": "32px",
+                  "flex": "1 1 300px",
+                  "maxWidth": "350px"
+                },
+                "children": [
+                  {
+                    "id": "feature-3-image",
+                    "title": "特性3图片",
+                    "componentName": "Image",
+                    "props": {
+                      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23e2e8f0'/%3E%3Ctext x='200' y='150' fill='%2364748b' font-family='Arial,sans-serif' font-size='24' text-anchor='middle' dominant-baseline='middle'%3EImage%3C/text%3E%3C/svg%3E",
+                      "alt": "主题定制",
+                      "width": "80px",
+                      "height": "80px",
+                      "objectFit": "fill",
+                      "rounded": "lg"
+                    }
+                  },
+                  {
+                    "id": "feature-3-title",
+                    "title": "特性3标题",
+                    "componentName": "Text",
+                    "props": {
+                      "children": "主题定制",
+                      "as": "h3",
+                      "size": "xl",
+                      "weight": "semibold",
+                      "color": "default"
+                    }
+                  },
+                  {
+                    "id": "feature-3-desc",
+                    "title": "特性3描述",
+                    "componentName": "Text",
+                    "props": {
+                      "children": "支持多种主题配色，轻松切换深色模式，打造独特的视觉风格",
+                      "as": "p",
+                      "size": "sm",
+                      "weight": "normal",
+                      "color": "muted"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cta-section",
+        "title": "CTA 区域",
+        "componentName": "Container",
+        "isContainer": true,
+        "props": {
+          "direction": "col",
+          "gap": "lg",
+          "align": "center",
+          "justify": "center",
+          "className": "max-w-4xl w-full bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl"
+        },
+        "style": {
+          "padding": "64px 48px",
+          "marginTop": "80px"
+        },
+        "children": [
+          {
+            "id": "cta-title",
+            "title": "CTA标题",
+            "componentName": "Text",
+            "props": {
+              "children": "准备好开始了吗？",
+              "as": "h2",
+              "size": "3xl",
+              "weight": "bold",
+              "align": "center",
+              "className": "text-white"
+            }
+          },
+          {
+            "id": "cta-desc",
+            "title": "CTA描述",
+            "componentName": "Text",
+            "props": {
+              "children": "立即体验全新的低代码开发方式，让创意快速落地",
+              "as": "p",
+              "size": "lg",
+              "weight": "normal",
+              "align": "center",
+              "className": "text-white/90"
+            }
+          },
+          {
+            "id": "cta-button",
+            "title": "CTA按钮",
+            "componentName": "Button",
+            "props": {
+              "children": "免费试用",
+              "variant": "secondary",
+              "size": "lg"
+            },
+            "style": {
+              "marginTop": "16px"
+            }
+          }
+        ]
+      },
+      {
+        "id": "footer",
+        "title": "页脚",
+        "componentName": "Container",
+        "isContainer": true,
+        "props": {
+          "direction": "col",
+          "gap": "md",
+          "align": "center",
+          "justify": "center",
+          "className": "max-w-6xl w-full border-t border-border"
+        },
+        "style": {
+          "padding": "40px 0",
+          "marginTop": "80px"
+        },
+        "children": [
+          {
+            "id": "footer-text",
+            "title": "版权信息",
+            "componentName": "Text",
+            "props": {
+              "children": "© 2026 wiggly. All rights reserved.",
+              "as": "p",
+              "size": "sm",
+              "weight": "normal",
+              "align": "center",
+              "color": "muted"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
